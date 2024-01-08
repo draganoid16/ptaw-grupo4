@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="animate__animated animate__fadeIn">
+
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+	<div class="limiter">
+		<div class="container">
+			<div class="wrap">
+				<div class="form-title  card-bg">
+					<span class="form-title-text pisca">
+						Login
+					</span>
+				</div>
+				<div class="form validate-form" action="includes/login.inc.php" method="POST">
+					<div class="wrap-input validate-input m-b-26" data-validate="Username is required">
+						<span class="label-input" id="email-input" >Email</span>
+						<input class="input" type="email" name="mailuid" id="mailuid" placeholder="Email">
+						<span class="focus-input"></span>
+					</div>
+
+					<div class="wrap-input validate-input m-b-18" data-validate="Password is required">
+						<span class="label-input" id="pwd-input">Password</span>
+						<input class="input" type="password" name="pwd" id="pwd" placeholder="Password">
+						<span class="focus-input"></span>
+					</div>
+
+					<div class="m-b-18">
+						<p id="mensagem" style="color: red"></p>
+					</div>
+
+					<div class="form-btn">
+						<button class="btn" id="login-submit" type="submit" name="login-submit">
+							Login
+						</button>
+						<form action="sign_up.html">
+							<button class="btn" name="login-submit">
+								Criar Conta
+							</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="src/js/user.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

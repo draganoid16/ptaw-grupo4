@@ -1,0 +1,9 @@
+.classpath
+.project
+.settings/
+target/
+.idea/
+api/config/database.php
+api/public/.htaccess
+
+api/config/database.php

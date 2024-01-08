@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="animate__animated animate__fadeIn">
+
+<head>
+	<title>Sign Up</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+	<div class="limiter" data-router-view="register">
+		<div class="container">
+			<div class="wrap">
+				<div class="form-title card-bg">
+					<span class="form-title-text pisca">
+						Sign Up
+					</span>
+				</div>
+
+
+				<div class="form validate-form" action="includes/signup.inc.php" method="POST">
+					<div class="wrap-input validate-input m-b-18" data-validate="Username is required">
+						<span id="fn-input" class="label-input">First Name</span>
+						<input class="input" type="text" name="fn" id="fn" placeholder="First Name">
+						<span class="focus-input"></span>
+					</div>
+					<div class="wrap-input validate-input m-b-18" data-validate="Username is required">
+						<span id="ln-input" class="label-input">Last Name</span>
+						<input class="input" type="text" name="ln" id="ln" placeholder="Last Name">
+						<span class="focus-input"></span>
+					</div>
+					<div class="wrap-input validate-input m-b-26" data-validate="Email is required">
+						<span id="email-input" class="label-input">Email</span>
+						<input class="input" type="email" name="mail" id="email" placeholder="Email">
+						<span class="focus-input"></span>
+					</div>
+					<div class="wrap-input validate-input m-b-18" data-validate="Password is required">
+						<span id="pwd-input" class="label-input">Password</span>
+						<input class="input" type="password" name="pwd" id="pwd" placeholder="Password">
+						<span class="focus-input"></span>
+					</div>
+					<div class="wrap-input validate-input m-b-18" data-validate="Password is required">
+						<span id="pwdR-input" class="label-input">Password</span>
+						<input class="input" type="password" name="pwd-repeat" id="pwdR"
+							placeholder="Repeat Password">
+						<span class="focus-input"></span>
+					</div>
+
+					<div class="m-b-18">
+						<p id="mensagem" style="color: red"></p>
+					</div>
+
+					<div class="form-btn">
+						<button id="signup-submit" class="btn" name="signup-submit">
+							Sign Up
+						</button>
+						<button id="back" class="btn" onclick="back()">
+							Back
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/custom.js"></script>
+	<script src="src/js/user.js"></script>
+
+</body>
+
+</html>
